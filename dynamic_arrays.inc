@@ -10,6 +10,7 @@
         
 #define get.%0(%1); DYNAMIC_ARRAYS_get(%0, %1);
 
+#define dsizeof(%0); Malloc_SlotSize(%0);
 
 stock DYNAMIC_ARRAYS_add_slot(Alloc:mem)
     return realloc(mem, 1);
